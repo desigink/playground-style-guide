@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- Form with labels before inputs -->
+		<form id="" name="" action="" method="">
+			<label for="">label goes here</label>
+			<input type="email" id="" placeholder="email" tabindex="1" required="required" />
+			<label for="">label goes here</label>
+			<input type="password" id="" placeholder="password" tabindex="2" required="required" />
+			<label for="">label goes here</label>
+			<input type="text" id="" placeholder="put your text here" tabindex="3" required="required" />
+			<button type="submit" form="" tabindex="4" class="">Sign up</button>
+		</form>
+<br><br><br>
+		<!-- Form with labels include inputs -->
+		<form id="" name="" action="" method="">
+			<label for="">
+				<input type="checkbox" id="" tabindex="1" />
+				<span>label goes here</span>
+			</label>
+			<label for="">
+				<input type="checkbox" id="" tabindex="1" />
+				<span>label goes here</span>
+			</label>
+			
+			<label for="">
+				<input type="radio" id="" tabindex="1" />
+				<span>label goes here</span>
+			</label>
+			<label for="">
+				<input type="radio" id="" tabindex="1" />
+				<span>label goes here</span>
+			</label>
+		</form>
+<br><br><br>
+
+		<!-- Form with labels include inputs -->
+		<form id="" name="" action="" method="">
+			<label for=""></label>
+			<input id="" type="number" name="quantity" min="1" max="5">
+			<label for=""></label>
+			<input id="" type="range" name="points" min="0" max="10">
+			
+		</form>
+
+	</body>
+</html>	
