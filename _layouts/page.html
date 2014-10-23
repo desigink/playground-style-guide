@@ -3,11 +3,16 @@ layout: default
 ---
 
 <div class="row">
-	<aside class="col-md-3" role="complementary"></aside>
-	
+	<aside class="col-md-3" role="complementary">
+		{% for section in site.data.docs %}
+		<h3>{{ section.title }}</h3>
+		{% include aside-nav.html items=section.docs %}
+		{% endfor %}
+	</aside>
+
 	<main class="col-md-9" role="main">
 		<section>
-			<header class="post-header">
+			<header class="page-header">
 				<h1>{{ page.title }}</h1>
 			</header>
 
