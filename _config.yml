@@ -5,6 +5,9 @@ description: "Write an awesome description for your new site here. You can edit 
 baseurl: ""
 url: "http://yourdomain.com"
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
