@@ -1,0 +1,86 @@
+---
+---
+
+// start content
+
+$blue: #1373BD;
+$orange: #ff8800;
+$lightblue: #e5eef9;
+
+@mixin clearfix() {
+	*zoom:1;
+
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}
+}
+
+@mixin reset-list(){
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+// Test
+.box-wrapper{
+	color:#636b75;
+	background: #f5f8fb;
+	line-height: 16px;
+	border-radius: 7px;
+	padding:10px;
+	margin-bottom:20px;
+	p{
+		margin: 0;
+		font-size: 13px;
+	}
+	.box-header{
+		vertical-align: middle;
+		.box-title{
+			.glyphicon{
+				color: $blue;
+				font-size: 24px;
+				vertical-align: middle;
+				padding: 0 0 5px 0;
+			}
+			font-size: 16px;
+			font-weight: normal;
+			padding: 7px 0 15px 5px;
+			text-shadow: 0px 1px 0px #fff;
+			position: relative;
+			margin: 0;
+		}
+	}
+	.box-body{
+		background-color:#fff;
+		border-radius:7px; 
+		.box-row{
+			padding: 20px;
+			&:nth-child(n+2){
+			border-top: 1px solid #e5eef9;
+			td{
+				padding:10px 0;
+			}
+			th{
+				padding:10px 0;
+			}
+		}
+		.box-row-title{
+			font-size: 16px;
+			font-weight: bold;
+			margin:0;
+		}
+		.box-table{
+			margin:0;
+		}
+		.box-row-table-header{
+			border-bottom: 1px solid $lightblue;
+		}
+		}
+	}
+}
