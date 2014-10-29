@@ -2,8 +2,8 @@
   docs:
   - table
   - navbar
-  - layout
   - fieldset
+  - layout
   # - forms
   # - buttons
   # - utility
