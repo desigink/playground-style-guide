@@ -122,9 +122,14 @@ $blue: #1373BD;
 
 // test2
 
+#flight-result{
+	text-align: right;
+}
+
 .result{
 	-webkit-font-smoothing: antialiased;
-	margin-bottom: 24px;
+	margin-bottom: 12px;
+	text-align: left;
 
 	.result-header{
 		background: $blue;
@@ -146,7 +151,7 @@ $blue: #1373BD;
 		background: #E3EAF3;
 		padding: 10px 16px 8px;
 		color: #636B75;
-		font-size: 11px;
+		font-size: 12px;
 		border-radius: 0 0 8px 8px;
 
 		.departure-city, .arrival-city{
@@ -163,10 +168,11 @@ $blue: #1373BD;
 
 			.connections-item{
 				display: block;
-				padding: 10px;
+				padding: 10px 8px;
 				font-weight: normal;
 				line-height: 22px;
 				margin: 0;
+				cursor: pointer;
 				@include clearfix;
 
 				&:nth-child(n+2){
@@ -190,7 +196,19 @@ $blue: #1373BD;
 				}
 			}
 		}
+
+		.result-header-arr{
+			background: #81A1CF;
+			color: #fff;
+			padding: 10px 16px;
+			margin: 8px -16px 8px;
+			font-size: 14px;
+		}
 	}
+}
+
+.btn-lg{
+	font-size: 14px;
 }
 
 // General img thumb
