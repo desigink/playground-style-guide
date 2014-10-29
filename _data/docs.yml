@@ -2,9 +2,14 @@
   docs:
   - table
   - navbar
+  - fieldset
   - layout
+  - footer
+  - pagination
+  - footer-menu
   - breadcrumb
-  - search-mask
+  - search_mask
+  # - forms
   # - buttons
   # - utility
 
