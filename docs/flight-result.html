@@ -9,86 +9,94 @@ permalink: /docs/flight-result/
 <div class="panel panel-default">
 	<div class="panel-body">
 		<!-- <img src="{{ "/images/results.png" | prepend: site.baseurl }}"> -->
-
-		<form id="flight-result" method="post" action="/">
-			<section class="result">
-				<header class="result-header">
-					<span class="thumb">
-						<img class="thumb-rounded" src="http://www.travelplanet24.com/uploads/img/flights/airlines/OA.gif">
-					</span>
-					<span class="result-title"><strong>Αναχώρηση</strong> › Κυριακή, 26 Οκτωβρίου 2014</span>
-					<div class="pull-right">
-						<small>Τελική Τιμή (συμπερ. φόρων)</small>
-						<span class="result-price">547,43 €</span>
-					</div>
-				</header>
-				<div class="result-body">
-					Αρ.Πτήσης
-					<div class="departure-city">
-						<strong>Αθήνα</strong><br>
-						Eleftherios Venizelos (ATH)
-					</div>
-					<div class="arrival-city">
-						<strong>Λονδίνο</strong><br>
-						Heathrow (LHR)
-					</div>
-					<fieldset class="connections">
-						<div class="connections-item">
-							<span class="flight-number">A3 602</span>
-							<span class="dep-arr-time">13:25</span>
-							<span class="trip-duration"> — 10h 45min → </span>
-							<span class="dep-arr-time">15:30</span>
-							<span class="stops">Απευθείας πτήση</span>
+		<ul class="list-unstyled">
+			<li>
+				<form id="flight-result" method="post" action="/">
+					<div class="result">
+						<div class="result-header ob">
+							<h3 class="result-title">
+								<span class="thumb">
+									<img class="thumb-rounded" src="http://www.travelplanet24.com/uploads/img/flights/airlines/OA.gif">
+								</span>
+								<strong>Αναχώρηση</strong> › Κυριακή, 26 Οκτωβρίου 2014
+							</h3>
 							<div class="pull-right">
-								<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
-								<input type="radio" name="connection" value="0" class="connections-item-rb" checked>
+								<small>Τελική Τιμή (συμπερ. φόρων)</small>
+								<span class="result-price">547,43 €</span>
 							</div>
 						</div>
-						<div class="connections-item">
-							<span class="flight-number">A3 602</span>
-							<span class="dep-arr-time">13:25</span>
-							<span class="trip-duration"> — 10h 45min → </span>
-							<span class="dep-arr-time">15:30</span>
-							<span class="stops">Απευθείας πτήση</span>
-							<div class="pull-right">
-								<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
-								<input type="radio" name="connection" value="1" class="connections-item-rb">
+						<div class="result-body">
+							Αρ.Πτήσης
+							<div class="departure-city">
+								<strong>Αθήνα</strong><br>
+								Eleftherios Venizelos (ATH)
+							</div>
+							<div class="arrival-city">
+								<strong>Λονδίνο</strong><br>
+								Heathrow (LHR)
+							</div>
+							<div class="connections">
+								<div class="connections-item">
+									<span class="flight-number">A3 602</span>
+									<span class="dep-arr-time">13:25</span>
+									<span class="trip-duration"> — 10h 45min → </span>
+									<span class="dep-arr-time">15:30</span>
+									<span class="stops">Απευθείας πτήση</span>
+									<div class="pull-right">
+										<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
+										<input type="radio" name="connection" value="0" class="connections-item-rb" checked>
+									</div>
+								</div>
+								<div class="connections-item">
+									<span class="flight-number">A3 602</span>
+									<span class="dep-arr-time">13:25</span>
+									<span class="trip-duration"> — 10h 45min → </span>
+									<span class="dep-arr-time">15:30</span>
+									<span class="stops">Απευθείας πτήση</span>
+									<div class="pull-right">
+										<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
+										<input type="radio" name="connection" value="1" class="connections-item-rb">
+									</div>
+								</div>
 							</div>
 						</div>
-					</fieldset>
-
-					<div class="result-header-arr">
-						<span class="thumb">
-							<img class="thumb-rounded" src="http://www.travelplanet24.com/uploads/img/flights/airlines/OA.gif">
-						</span>
-						<span class="result-title"><strong>Επιστροφή</strong> › Δευτέρα, 3 Νοεμβρίου 2014</span>
-					</div>
-					Αρ.Πτήσης
-					<div class="departure-city">
-						<strong>Λονδίνο</strong><br>
-						Heathrow (LHR)
-					</div>
-					<div class="arrival-city">
-						<strong>Αθήνα</strong><br>
-						Eleftherios Venizelos (ATH)
-					</div>
-					<fieldset class="connections">
-						<div class="connections-item">
-							<span class="flight-number">A3 602</span>
-							<span class="dep-arr-time">13:25</span>
-							<span class="trip-duration"> — 10h 45min → </span>
-							<span class="dep-arr-time">15:30</span>
-							<span class="stops">Απευθείας πτήση</span>
-							<div class="pull-right">
-								<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
-								<input type="radio" name="connection" value="0" class="connections-item-rb" checked>
+						<div class="result-header ib">
+							<h3 class="result-title">
+								<span class="thumb">
+									<img class="thumb-rounded" src="http://www.travelplanet24.com/uploads/img/flights/airlines/OA.gif">
+								</span>
+								<strong>Επιστροφή</strong> › Δευτέρα, 3 Νοεμβρίου 2014
+							</h3>
+						</div>
+						<div class="result-body">
+							Αρ.Πτήσης
+							<div class="departure-city">
+								<strong>Λονδίνο</strong><br>
+								Heathrow (LHR)
+							</div>
+							<div class="arrival-city">
+								<strong>Αθήνα</strong><br>
+								Eleftherios Venizelos (ATH)
+							</div>
+							<div class="connections">
+								<div class="connections-item">
+									<span class="flight-number">A3 602</span>
+									<span class="dep-arr-time">13:25</span>
+									<span class="trip-duration"> — 10h 45min → </span>
+									<span class="dep-arr-time">15:30</span>
+									<span class="stops">Απευθείας πτήση</span>
+									<div class="pull-right">
+										<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
+										<input type="radio" name="connection" value="0" class="connections-item-rb" checked>
+									</div>
+								</div>
 							</div>
 						</div>
-					</fieldset>
-				</div>
-			</section>
-			<button type="submit" class="btn btn-success btn-lg">Κράτηση ›</button>
-		</form>
+					</div>
+					<button type="submit" class="btn btn-success btn-lg">Κράτηση ›</button>
+				</form>
+			</li>
+		</ul>
 
 		<!-- <ol class="results">
 			<li class="result-item">
@@ -137,84 +145,92 @@ permalink: /docs/flight-result/
 </div>
 
 {% highlight html %}
-<form id="flight-result" method="post" action="/">
-	<section class="result">
-		<header class="result-header">
-			<span class="thumb">
-				<img class="thumb-rounded" src="images/OA.gif">
-			</span>
-			<span class="result-title"><strong>Αναχώρηση</strong> › Κυριακή, 26 Οκτωβρίου 2014</span>
-			<div class="pull-right">
-				<small>Τελική Τιμή (συμπερ. φόρων)</small>
-				<span class="result-price">547,43 €</span>
-			</div>
-		</header>
-		<div class="result-body">
-			Αρ.Πτήσης
-			<div class="departure-city">
-				<strong>Αθήνα</strong><br>
-				Eleftherios Venizelos (ATH)
-			</div>
-			<div class="arrival-city">
-				<strong>Λονδίνο</strong><br>
-				Heathrow (LHR)
-			</div>
-			<fieldset class="connections">
-				<div class="connections-item">
-					<span class="flight-number">A3 602</span>
-					<span class="dep-arr-time">13:25</span>
-					<span class="trip-duration"> — 10h 45min → </span>
-					<span class="dep-arr-time">15:30</span>
-					<span class="stops">Απευθείας πτήση</span>
+<ul>
+	<li>
+		<form id="flight-result" method="post" action="/">
+			<div class="result">
+				<div class="result-header ob">
+					<h3 class="result-title">
+						<span class="thumb">
+							<img class="thumb-rounded" src="/OA.gif">
+						</span>
+						<strong>Αναχώρηση</strong> › Κυριακή, 26 Οκτωβρίου 2014
+					</h3>
 					<div class="pull-right">
-						<a href="#" class="trip-details has-toggle"> Λεπτομέρειες </a>
-						<input type="radio" name="connection" value="0" class="connections-item-rb">
+						<small>Τελική Τιμή (συμπερ. φόρων)</small>
+						<span class="result-price">547,43 €</span>
 					</div>
 				</div>
-				<div class="connections-item">
-					<span class="flight-number">A3 602</span>
-					<span class="dep-arr-time">13:25</span>
-					<span class="trip-duration"> — 10h 45min → </span>
-					<span class="dep-arr-time">15:30</span>
-					<span class="stops">Απευθείας πτήση</span>
-					<div class="pull-right">
-						<a href="#" class="trip-details has-toggle"> Λεπτομέρειες </a>
-						<input type="radio" name="connection" value="1" class="connections-item-rb">
+				<div class="result-body">
+					Αρ.Πτήσης
+					<div class="departure-city">
+						<strong>Αθήνα</strong><br>
+						Eleftherios Venizelos (ATH)
+					</div>
+					<div class="arrival-city">
+						<strong>Λονδίνο</strong><br>
+						Heathrow (LHR)
+					</div>
+					<div class="connections">
+						<div class="connections-item">
+							<span class="flight-number">A3 602</span>
+							<span class="dep-arr-time">13:25</span>
+							<span class="trip-duration"> — 10h 45min → </span>
+							<span class="dep-arr-time">15:30</span>
+							<span class="stops">Απευθείας πτήση</span>
+							<div class="pull-right">
+								<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
+								<input type="radio" name="connection" value="0" class="connections-item-rb" checked>
+							</div>
+						</div>
+						<div class="connections-item">
+							<span class="flight-number">A3 602</span>
+							<span class="dep-arr-time">13:25</span>
+							<span class="trip-duration"> — 10h 45min → </span>
+							<span class="dep-arr-time">15:30</span>
+							<span class="stops">Απευθείας πτήση</span>
+							<div class="pull-right">
+								<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
+								<input type="radio" name="connection" value="1" class="connections-item-rb">
+							</div>
+						</div>
 					</div>
 				</div>
-			</fieldset>
-			<!-- result header arrival -->
-			<div class="result-header-arr">
-				<span class="thumb">
-					<img class="thumb-rounded" src="images/OA.gif">
-				</span>
-				<span class="result-title"><strong>Επιστροφή</strong> › Δευτέρα, 3 Νοεμβρίου 2014</span>
-			</div>
-			Αρ.Πτήσης
-			<div class="departure-city">
-				<strong>Λονδίνο</strong><br>
-				Heathrow (LHR)
-			</div>
-			<div class="arrival-city">
-				<strong>Αθήνα</strong><br>
-				Eleftherios Venizelos (ATH)
-			</div>
-			<fieldset class="connections">
-				<div class="connections-item">
-					<span class="flight-number">A3 602</span>
-					<span class="dep-arr-time">13:25</span>
-					<span class="trip-duration"> — 10h 45min → </span>
-					<span class="dep-arr-time">15:30</span>
-					<span class="stops">Απευθείας πτήση</span>
-					<div class="pull-right">
-						<a href="#" class="trip-details has-toggle"> Λεπτομέρειες </a>
-						<input type="radio" name="connection" value="0" class="connections-item-rb">
+				<div class="result-header ib">
+					<h3 class="result-title">
+						<span class="thumb">
+							<img class="thumb-rounded" src="/OA.gif">
+						</span>
+						<strong>Επιστροφή</strong> › Δευτέρα, 3 Νοεμβρίου 2014
+					</h3>
+				</div>
+				<div class="result-body">
+					Αρ.Πτήσης
+					<div class="departure-city">
+						<strong>Λονδίνο</strong><br>
+						Heathrow (LHR)
+					</div>
+					<div class="arrival-city">
+						<strong>Αθήνα</strong><br>
+						Eleftherios Venizelos (ATH)
+					</div>
+					<div class="connections">
+						<div class="connections-item">
+							<span class="flight-number">A3 602</span>
+							<span class="dep-arr-time">13:25</span>
+							<span class="trip-duration"> — 10h 45min → </span>
+							<span class="dep-arr-time">15:30</span>
+							<span class="stops">Απευθείας πτήση</span>
+							<div class="pull-right">
+								<span class="trip-details"><a href="">Λεπτομέρειες</a></span>
+								<input type="radio" name="connection" value="0" class="connections-item-rb" checked>
+							</div>
+						</div>
 					</div>
 				</div>
-			</fieldset>
-		</div>
-	</section>
-
-	<button type="submit" class=" ">Κράτηση ›</button>
-</form>
+			</div>
+			<button type="submit" class="btn btn-success btn-lg">Κράτηση ›</button>
+		</form>
+	</li>
+</ul>
 {% endhighlight%}

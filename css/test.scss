@@ -40,6 +40,8 @@ $blue: #1373BD;
 
 	.filter-body {
 
+		label{display:block;}
+
 		ul{margin: 0;}
 	}
 
@@ -157,13 +159,28 @@ $blue: #1373BD;
 	-webkit-font-smoothing: antialiased;
 	margin-bottom: 12px;
 	text-align: left;
+	background: #E3EAF3;
+	border-radius: 8px;
 
 	.result-header{
-		background: $blue;
 		color: #fff;
-		border-radius: 8px 8px 0 0;
 		padding: 10px 16px;
 		@include clearfix;
+
+		&.ob{
+			background: $blue;
+			border-radius: 8px 8px 0 0;
+		}
+
+		&.ib{
+			background: #81a1cf;
+		}
+
+		.result-title {
+			font-size: 16px;
+			margin: 0;
+			float: left;
+		}
 
 		.result-price{
 			font-size: 20px;
@@ -175,11 +192,9 @@ $blue: #1373BD;
 	}
 
 	.result-body{
-		background: #E3EAF3;
-		padding: 10px 16px 8px;
 		color: #636B75;
 		font-size: 12px;
-		border-radius: 0 0 8px 8px;
+		padding: 8px;
 
 		.departure-city, .arrival-city{
 			display: inline-block;
@@ -190,7 +205,7 @@ $blue: #1373BD;
 
 		.connections {
 			background: #FFF;
-			margin: 5px -8px 0;
+			margin: 8px 0 0;
 			border-radius: 4px;
 
 			.connections-item{
@@ -207,7 +222,7 @@ $blue: #1373BD;
 				}
 
 				> *:nth-child(n+2), input[type=radio]{
-					margin-left: 40px;
+					margin-left: 36px;
 					vertical-align: middle;
 				}
 
