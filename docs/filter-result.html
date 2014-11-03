@@ -1,0 +1,147 @@
+---
+layout: page
+title: Filter Result
+permalink: /docs/filter-result/
+---
+
+<h3>Example</h3>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!-- <img src="{{ "/images/results.png" | prepend: site.baseurl }}"> -->
+
+		<div class="filter">
+			<form id="filter-result" method="post" action="/">
+				<fieldset class="filter-item">
+					<h3 class="filter-title">Price range</h3>
+					<div class="filter-body">
+						<!-- <label for="rating">Your rating</label> -->
+						<input id="price" name="price" type="range" min="1" max="5">
+					</div>
+				</fieldset>
+				<fieldset class="filter-item">
+					<h3 class="filter-title">Airlines</h3>
+					<div class="filter-body">
+						<ul class="list-unstyled">
+							<li>
+								<label>
+									<input type="checkbox" name="" value="">
+									Arline name
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="" value="">
+									Arline name
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="" value="">
+									Arline name
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="" value="">
+									Arline name
+								</label>
+							</li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="filter-item">
+					<h3 class="filter-title">Airplane Type</h3>
+					<div class="filter-body">
+						<ul class="list-unstyled">
+							<li>
+								<label>
+									<input type="checkbox" name="" value="">
+									type
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="" value="">
+									type
+								</label>
+							</li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="filter-item">
+					<div class="filter-body">
+						<butoon class="btn btn-default btn-block">Reset Filters</butoon>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	{% highlight html %}
+	<div class="filter">
+		<form id="filter-result" method="post" action="/">
+			<fieldset class="filter-item">
+				<h3 class="filter-title">Price range</h3>
+				<div class="filter-body">
+					<input id="price" name="price" type="range" min="1" max="5">
+				</div>
+			</fieldset>
+			<fieldset class="filter-item">
+				<h3 class="filter-title">Airlines</h3>
+				<div class="filter-body">
+					<ul class="list-unstyled">
+						<li>
+							<label>
+								<input type="checkbox" name="" value="">
+								Arline name
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="" value="">
+								Arline name
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="" value="">
+								Arline name
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="" value="">
+								Arline name
+							</label>
+						</li>
+					</ul>
+				</div>
+			</fieldset>
+			<fieldset class="filter-item">
+				<h3 class="filter-title">Airplane Type</h3>
+				<div class="filter-body">
+					<ul class="list-unstyled">
+						<li>
+							<label>
+								<input type="checkbox" name="" value="">
+								type
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="" value="">
+								type
+							</label>
+						</li>
+					</ul>
+				</div>
+			</fieldset>
+			<fieldset class="filter-item">
+				<div class="filter-body">
+					<butoon class="btn">Reset Filters</butoon>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	{% endhighlight%}

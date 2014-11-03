@@ -24,6 +24,33 @@ $blue: #1373BD;
 	list-style: none;
 }
 
+// filter
+.filter {
+	width: 30%;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+
+	.filter-item{
+		padding: 15px;
+
+		&:nth-child(n+2){
+			border-top: 1px solid #DDD;
+		}
+	}
+
+	.filter-body {
+
+		ul{margin: 0;}
+	}
+
+	h3.filter-title {
+		margin: 0;
+		font-size: 16px;
+		font-weight: 500;
+
+		+ .filter-body{margin-top: 15px;}
+	}
+}
 
 // Test
 

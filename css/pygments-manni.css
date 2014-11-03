@@ -69,7 +69,7 @@ pre {
 	word-wrap: nowrap;
 	white-space: nowrap;
 	border: 1px solid #DDD;
-	tab-size: 4;
+	tab-size: 2;
 }
 
 .panel + .highlight {
