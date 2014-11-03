@@ -1,0 +1,46 @@
+---
+layout: page
+title: Breadcrumb
+permalink: /docs/breadcrumb/
+---
+
+
+<p>The graphical control element Breadcrumbs or breadcrumb trail is a navigation aid used in user interfaces. It allows users to keep track of their locations within programs or documents. Breadcrumbs typically appear horizontally across the top of a Web page, often below title bars or headers. They provide links back to each previous page the user navigated through to get to the current page or—in hierarchical site structures—the parent pages of the current one. Breadcrumbs provide a trail for the user to follow back to the starting or entry point.</p>
+<p>In our site breadcrumb is used to indecate the steps involved in booking process.</p>
+<p>For this reason we consider breadcrumb element as a step listing item</p>
+
+<h2>Case study reference</h2>
+<p><a href="http://css-tricks.com/markup-for-breadcrumbs/" target="_blank">http://css-tricks.com/markup-for-breadcrumbs/</a></p>
+
+
+<h3>Markup</h3>
+<p> Breadcrumb should not be considered as &lt;nav&gt; tag, even if it is consisted by a set of links. &lt;nav&gt; element is intended only for major block of navigation links. Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content. </p>
+
+<p>Breadcrumb should not be considered as &lt;ul&gt; element. The HTML is not semantic. Coding a breadcrumb as an unordered list makes it seem like the items are on the same hierarchical level, like it's a set of items in a row. The items in a breadcrumb are not, they represent a path, with each link being a "child" of the last.</p>
+
+<p>Breadcrumbs are in a very specific order and so using an "ordered" list seems appropriate. I'm somehow not totally satisfied by that though. Just because a list is 1, 2, 3, etc, doesn't really represent layers of hierarchy.</p>
+
+{% highlight html %}
+
+<ol class="breadcrumb">
+	<li class="list-item"><a href="#">Αναζήτηση</a></li>
+	<li class="list-item is-active"><span class="icon"></span> <a href="#">Διαθεσιμότητα</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Επιβάτες</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Επιλογές</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Στοιχεία Πελάτη &amp; Πληρωμή</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Ολοκλήρωση</a></li>
+</ol>
+
+{% endhighlight%}
+
+<h3>Example</h3>
+
+<ol class="breadcrumb">
+	<li class="list-item"><a href="#">Αναζήτηση</a></li>
+	<li class="list-item is-active"><span class="icon"></span> <a href="#">Διαθεσιμότητα</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Επιβάτες</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Επιλογές</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Στοιχεία Πελάτη &amp; Πληρωμή</a></li>
+	<li class="list-item is-disable"><span class="icon"></span> <a href="#">Ολοκλήρωση</a></li>
+</ol>
+
