@@ -1,0 +1,118 @@
+---
+layout: page
+title: Footer
+permalink: /docs/footer/
+---
+
+<p>Form fieldset box wrapper with many rows</p>
+<h3>Example</h3>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>Current</h3>
+		<img src="{{ "/images/form-fieldset-box.png" | prepend: site.baseurl }}" />
+	</div>
+</div>
+<div class="panel panel-default">	
+	<div class="panel-body">
+		<h3>Proposed</h3>
+		<form id="addons" method="post" action="/">
+			<section class="box-wrapper">
+				<header class="box-header">
+					<h3 class="box-title"><span class="glyphicon glyphicon-briefcase"></span> Baggages</h3>
+				</header>
+				<fieldset class="box-body">
+					<div class="box-row">
+						<p>No free baggage is included in the selected itinerary.<br>Please, select your baggage needs below.</p>
+					</div>
+					<div class="box-row">
+						<h4 class="box-row-title">Thessaloniki, Greece > Athens, Greece<br>
+						<small><strong>Departure:</strong> Tuesday, 4 November 2014</small></h4>
+						<table class="table box-table">
+							<thead>
+								<tr >
+									<th scope="col" class="box-row-table-header">Passenger</th>
+									<th scope="col" class="box-row-table-header">Extra baggage</th>
+									<th scope="col" class="box-row-table-header text-right">Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>LELOSA OBSERVESA</td>
+									<td>
+										<select>
+										  <option value="">1 piece of baggage €15.00 Max. Weight: 23 Kg</option>
+										  <option value="">1 piece of baggage €15.00 Max. Weight: 23 Kg</option>
+										  <option value="">1 piece of baggage €15.00 Max. Weight: 23 Kg</option>
+										</select>
+									</td>
+									<td class="text-right">15,00 €</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="box-row">
+						<h4 class="box-row-title">Athens, Greece > Thessaloniki, Greece<br>
+						<small><strong>Departure:</strong> Tuesday, 4 November 2014</small></h4>
+						<table class="table box-table">
+							<thead>
+								<tr >
+									<th scope="col" class="box-row-table-header">Passenger</th>
+									<th scope="col" class="box-row-table-header">Extra baggage</th>
+									<th scope="col" class="box-row-table-header text-right">Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>LELOSA OBSERVESA</td>
+									<td>
+										<select>
+										  <option value="">1 piece of baggage €15.00 Max. Weight: 23 Kg</option>
+										  <option value="">1 piece of baggage €15.00 Max. Weight: 23 Kg</option>
+										  <option value="">1 piece of baggage €15.00 Max. Weight: 23 Kg</option>
+										</select>
+									</td>
+									<td class="text-right">15,00 €</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="box-row text-right">
+						Total Price: <span class="lead">30,00 €</span>
+						<p></p>
+					</div>
+				</fieldset>
+			</section>
+			<section class="box-wrapper">
+				<header class="box-header">
+					<h3 class="box-title"><span class="glyphicon glyphicon-fire"></span> Box title</h3>
+				</header>
+				<fieldset class="box-body">
+					<div class="box-row">
+						<p>content goes here</p>
+					</div>
+					<div class="box-row">
+						<p>content goes here</p>
+					</div>
+					<div class="box-row">
+						<p>content goes here</p>
+					</div>
+				</fieldset>											
+			</section>
+			<button class="btn btn-default">back</button>
+			<button class="btn btn-success pull-right">submit</button>
+		</form>
+	</div>
+</div>
+{% highlight html %}
+<fieldset class="box">
+	<legend>
+		<h2><i id="" class="">icon</i> fieldset title</h2>
+	</legend>
+	<div class="box-row">this is the content area</div>
+	<div class="box-row">this is the content area</div>
+	<div class="box-row">this is the content area</div>
+	<div class="box-row">this is the content area</div>
+</fieldset>
+{% endhighlight%}
+<p><span class="label label-warning">Notice</span> that NOT all links of a document should be inside a &lt;nav&gt; element. The &lt;nav&gt; element is intended only for major block of <strong>navigation links</strong>.</p>
