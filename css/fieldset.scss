@@ -3,9 +3,11 @@
 
 // start content
 
+$main-body-color: #636b75;
 $blue: #1373BD;
 $orange: #ff8800;
 $lightblue: #e5eef9;
+
 
 @mixin clearfix() {
 	*zoom:1;
@@ -29,7 +31,7 @@ $lightblue: #e5eef9;
 
 // Test
 .box-wrapper{
-	color:#636b75;
+	color:$main-body-color;
 	background: #f5f8fb;
 	line-height: 16px;
 	border-radius: 7px;
